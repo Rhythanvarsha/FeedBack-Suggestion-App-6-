@@ -1,0 +1,129 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 200;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 720px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+body.dark-mode .modal-card {
+  background: #1a1a2e;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+body.dark-mode .modal-header {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #333;
+}
+
+body.dark-mode .modal-header h3 {
+  color: #fff;
+}
+
+.modal-icon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.dark-mode .modal-icon-btn {
+  color: #fff;
+}
+
+.modal-icon-btn:hover {
+  background: rgba(102, 126, 234, 0.12);
+}
+
+.modal-form {
+  padding: 20px;
+}
+
+.modal-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #333;
+}
+
+body.dark-mode .modal-form .form-group label {
+  color: #fff;
+}
+
+.modal-form .form-group input,
+.modal-form .form-group select,
+.modal-form .form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+body.dark-mode .modal-form .form-group input,
+body.dark-mode .modal-form .form-group select,
+body.dark-mode .modal-form .form-group textarea {
+  background: #1a1a2e;
+  color: #fff;
+  border-color: #404050;
+}
+
+.modal-error {
+  background: rgba(255, 107, 107, 0.12);
+  color: #ff6b6b;
+  border-left: 4px solid #ff6b6b;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-save {
+  background: #667eea;
+  color: #fff;
+}
+
